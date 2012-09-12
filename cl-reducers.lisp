@@ -25,7 +25,7 @@
 (defmacro reducer (coll &rest body)
   `(lambda (op init)
      (let ((reduce 
-	    (if (listp ,coll)
+	    (if (or (consp ,coll) (arrayp ,coll))
 		(curry-right 'reduce :initial-value init)
 		(lambda (op x) (funcall x op init)))))
        (funcall reduce ,@body ,coll))))
