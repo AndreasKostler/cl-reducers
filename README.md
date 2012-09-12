@@ -1,6 +1,6 @@
 * cl-reducers
 
-Inspired by Rich Hickeys reducers for clojure described [here] and [here]
+Inspired by Rich Hickeys reducers for clojure described [here](http://clojure.com/blog/2012/05/08/reducers-a-library-and-model-for-collection-processing.html) and [here](http://clojure.com/blog/2012/05/15/anatomy-of-reducer.html).
 
 ** Usage
 
